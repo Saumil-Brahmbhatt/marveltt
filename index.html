@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101318">
+  <title>Marvel watch order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar"><a class="brand" href="#">MARVEL <span>/ WATCH ORDER</span></a><div class="save-status"><span class="status-dot"></span> Saved locally</div></header>
+    <main>
+      <section class="hero"><div class="hero-copy"><p class="eyebrow">Your personal viewing log</p><h1>Every universe.<br><em>One order.</em></h1><p class="hero-text">Keep your place across the films, series, specials, and everything in between.</p></div><div class="hero-mark" aria-hidden="true"><span>∞</span><small>MCU<br>+ BEYOND</small></div></section>
+      <section class="dashboard" aria-label="Watch progress"><div class="progress-panel"><div class="progress-heading"><span>Overall progress</span><strong id="progress-percent">0%</strong></div><div class="progress-track"><div id="progress-bar"></div></div><p id="progress-copy">0 of 0 titles watched</p></div><div class="stat"><span>Watched</span><strong id="watched-count">0</strong></div><div class="stat"><span>Still to see</span><strong id="remaining-count">0</strong></div><button class="reset-button" id="reset-button" type="button">Reset progress <span>↺</span></button></section>
+      <section class="catalog-section"><div class="catalog-head"><div><p class="eyebrow">The complete index</p><h2>Watch order</h2></div><div class="catalog-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search titles..." aria-label="Search titles"></label><div class="type-switch" role="group" aria-label="Filter by type"><button class="active" data-type="all" type="button">All <span id="all-count">0</span></button><button data-type="movie" type="button">Films <span id="movie-count">0</span></button><button data-type="series" type="button">Series <span id="series-count">0</span></button></div></div></div><nav class="division-tabs" id="division-tabs" aria-label="Marvel divisions"></nav><div class="list-head"><span>Title</span><span>Format</span><span>Progress</span><span>Action</span></div><div id="catalog" class="catalog"></div><p id="empty-state" class="empty-state" hidden>No titles match that search.</p></section>
+    </main>
+    <footer>Progress is stored in this browser only · <span>Made for the long haul</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
